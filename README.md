@@ -11,23 +11,23 @@ This update system is used in [@CrazyVinc/Led-Controller](https://github.com/Cra
 
 
 ### Example to run the default updater and run npm install
-> `autoupdater -dest=./ -zip=./temp/update.zip -extractfile=installer.json -npm`
+`autoupdater -dest=./ -zip=./temp/update.zip -extractfile=installer.json -npm`
 
 ### To use the built-in extractor, You can define what to extract:
-> ```json
-> {
->    "extract": {
->        "files": [
->            "/index.js",
->            "/installer.json",
->            "/package.json"
->        ],
->        "directories": [
->            "/src"
->        ]
->    }
-> }
->```
+```json
+{
+   "extract": {
+       "files": [
+           "/index.js",
+           "/installer.json",
+           "/package.json"
+       ],
+       "directories": [
+           "/src"
+       ]
+   }
+}
+```
 
 # Recommend use:
 1. Use a launcher to run your main program.
